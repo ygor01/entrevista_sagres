@@ -8,7 +8,7 @@
         
         <div class="container">
                 <center><h1>Alunos</h1></center><br>
-                
+                <a href="{{ route('aluno.create')}}"><h5>Cadastrar novo</h5></a><br>
             <div class="row">
                 @foreach($alunos as $aluno)
                 <div class="col-md-4 thumb_menu">

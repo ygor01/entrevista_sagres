@@ -22,8 +22,8 @@ class AlunoController extends Controller
     public function index()
     {
         $alunos = Aluno::orderBy('nome', 'asc')->get();
-
-        //dd($alunos);
+        
+        
         return view('aluno.index', compact('alunos'));
     }
 
@@ -34,7 +34,7 @@ class AlunoController extends Controller
      */
     public function create()
     {
-        return view('aluno.index');
+        return view('aluno.create');
     }
 
     /**
