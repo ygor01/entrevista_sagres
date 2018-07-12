@@ -1,0 +1,88 @@
+body {
+  background-color: #ececec !important; }
+
+.thumb_menu {
+  background: #fdfdfd;
+  padding: 10px;
+  transition: 0.5s;
+  text-align: center;
+}
+  .thumb_menu li {
+    transition: 0.5s; }
+  .thumb_menu:hover {
+    cursor: pointer;    
+    background: #d4d4d4;
+    text-decoration: none; }
+  .thumb_menu:hover li {
+    margin-left: 10px;
+    transition: 0.2s;
+    color: #d03737; }
+
+.form-geral {
+  width: 450px;
+  margin: 2rem auto 0px auto;
+  padding: 10px;
+  background: white;
+  border: 1px solid #dedede; }
+  .form-geral .form-group > h2 {
+    text-align: center; }
+
+.name-market {
+  display: inline-flex; }
+
+.name-market, .div-icons-thumb {
+  margin-top: 15px; }
+
+.img-thumb {
+  width: 150px; }
+
+.div-icons-thumb {
+  float: right; }
+
+.ico-del, .ico-edit {
+  font-size: 15pt; }
+
+.ico-del {
+  color: #d03737; }
+
+.ico-edit {
+  color: #19a6fb; }
+
+.div-bg {
+  background: white;
+  padding: 10px;
+  margin-top: 30px; }
+
+.btn-submit, .btn-submit-danger {
+  transition: 0.5s; }
+
+.btn-submit {
+  margin-top: 1rem;
+  width: 100%;
+  background: #3883b9;
+  color: white; }
+  .btn-submit:hover {
+    background: #5d91b6; }
+
+.btn-submit-danger {
+  background: #d03737;
+  color: white !important; }
+  .btn-submit-danger:hover {
+    background: #d34b4b; }
+
+.info-location, .info-website {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px 0px; }
+
+.checkbox-markets {
+  padding-right: 0px !important; }
+
+.checkbox-geral {
+  border: 1px solid #e6e6e6;
+  border-left: none;
+  border-right: none;
+  margin: 0px !important; }
+
+/*# sourceMappingURL=style.css.map */
