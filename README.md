@@ -8,6 +8,5 @@ Salve o arquivo <b>.env.example</b> para <b>.env</b> na raiz do projeto e depois
 
 O arquivo .env precisa ter uma key para funcionar corretamente, para gerar a key utilize o comando <b>php artisan key:generate</b>
 
-O banco de dados está incluso e poderá ser gerado através do comando <b>php artisan migrate</b>
-
+As tabelas do banco estão inclusas no projeto e poderão ser geradas através do comando <b>php artisan migrate</b>.
 
