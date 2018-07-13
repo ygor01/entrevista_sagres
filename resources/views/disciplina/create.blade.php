@@ -15,11 +15,11 @@
             </div>
 
             <button class="btn btn-primary" type="submit">Cadastrar disciplina</button>
-
-
-
-
+            <br><br>
+            <a href="{{ route('disciplina.index') }}"><h5>Voltar para disciplinas</h5></a>
         </div>
+
+        
 </form>
 </div>
 @endsection

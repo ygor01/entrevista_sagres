@@ -51,7 +51,7 @@ class AlunoController extends Controller
             array_merge($request->except('data'), ['data' => $data])
         );
 
-        return view('aluno.index');
+        return redirect()->route('aluno.index');
     }
 
     /**

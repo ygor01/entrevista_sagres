@@ -25,7 +25,7 @@
 
             <div class="form-group">
                 <label for="aluno">Selecione o aluno</label>
-                <select class="form-control" name="aluno">
+                <select class="form-control" name="aluno" required>
                     @if($alunos->count() == 0)
                         <option value="">Nenhum aluno foi encontrado</option>
                     @else                            
@@ -40,22 +40,23 @@
 
             <div class="form-group">
                 <label for="valor_nota">Digite a Nota 1</label>
-                <input class="form-control" type="text" name="valor_nota[]"></input>
+                <input class="form-control" type="text" name="valor_nota[]" required></input>
             </div>
 
             <div class="form-group">
                 <label for="valor_nota">Digite a Nota 2</label>
-                <input class="form-control" type="text" name="valor_nota[]"></input>
+                <input class="form-control" type="text" name="valor_nota[]" required></input>
             </div>
 
             <div class="form-group">
                 <label for="valor_nota">Digite a Nota 3</label>
-                <input class="form-control" type="text" name="valor_nota[]"></input>
+                <input class="form-control" type="text" name="valor_nota[]" required></input>
             </div>
 
             <button class="btn btn-primary" type="submit">Cadastrar disciplina</button>
             <br><br>
             <a href="{{ route('menu') }}"><h5>Voltar para menu</h5></a>
+            
 
 
 

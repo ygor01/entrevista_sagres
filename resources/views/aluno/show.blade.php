@@ -22,37 +22,46 @@
                     Data de entrada na escola: {{$aluno->data}}<br>
                     <h3>Notas</h3>
 
-                    <table class="table">
-                        <tr>
-                            <td>Disciplina</td>
-                            <td>Nota1</td>
-                            <td>Nota2</td>
-                            <td>Nota3</td>
-                            <td>Média</td>      
-                        </tr>
-                        @foreach($disciplinas as $key => $disciplina)
-                            
-                           
-                               <tr>
-                               <td>{{$disciplina->nome}}</td>
+                   
+                        @if($notas->count() != 0)
+                            <table class="table">
+                                <tr>
+                                    <td>Disciplina</td>
+                                    <td>Nota1</td>
+                                    <td>Nota2</td>
+                                    <td>Nota3</td>
+                                    <td>Média</td>      
+                                </tr>
+                            @foreach($disciplinas as $key => $disciplina)
                                 
-                           
                             
-                            @foreach($notas as $nota)
-                                @if($disciplina->id == $nota->disciplina_id)
-                                <td>{{$nota->valor_nota}}</td>   
-                                                          
-                                @endif
+                                <tr>
+                                <td>{{$disciplina->nome}}</td>
+                                    
                             
-                            @endforeach
-                               <td>{{$media[$key]}}</td>   
+                                
+                                @foreach($notas as $nota)
+                                    @if($disciplina->id == $nota->disciplina_id)
+                                    <td>{{$nota->valor_nota}}</td>   
+                                    @else                    
+                                    @endif
+                                
+                                @endforeach
+                                @if(isset($media[$key]) == true)
+                                    <td>{{$media[$key]}}</td>  
+                                @else
+                                @endif 
 
-                           
-                               
-                              
-                            </tr>
-                        @endforeach
-                   </table>
+                            
+                                
+                                
+                                </tr>
+                            @endforeach
+                        </table>
+                   
+                        @else
+                            <h5>----- Nenhuma nota cadastrada para esse aluno -----</h5>
+                        @endif
                 </div>         
             </div>
             <br>
